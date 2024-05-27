@@ -18,7 +18,7 @@
         width: 95%;
         height: 55vh;
         background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(17px);
+        backdrop-filter: blur(10px);
         margin-left: auto;
         margin-right: auto;
         margin-top: .4rem;
@@ -47,7 +47,6 @@
         width: 50px;
     }
 
-    
     .footer-container {
         width: 100%;
         padding: 0 4%;
@@ -100,7 +99,7 @@
 
     #contact-map-area  {
         flex-direction: column;
-        width: 100%;
+        margin: 1.1rem;
     }
     
     .contact-cols .input input {
@@ -130,6 +129,16 @@
     .actual-products {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .menu-content-box {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .menu-col {
+        min-width: 60vw;
+    }
 }
 
 @media (max-width: 450px) {
@@ -141,6 +150,8 @@
         justify-content: flex-start;
         flex-direction: column;
         padding-top: 4rem;
+        backdrop-filter: blur(7px);
+        box-shadow: none;
     }
 
     .header .navbar.active {
@@ -224,5 +235,13 @@
 
     .products-heading  h2 {
         font-size: 2.4rem;
+    }
+
+    .menu-col-details p {
+        font-size: 1.2rem;
+    }
+
+    .contact-map-area {
+        margin: 1rem;
     }
 } 

@@ -140,6 +140,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-size: cover;
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -1029,3 +1030,106 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 8rem;
 }
 /* END STORE MAIN PAGE */
+
+/* MENU MAIN PAGE */
+.menu-page {
+    background: url(../images/store-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nenu-headings {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.nenu-headings h6 {
+    background-image: linear-gradient(to right,#FAA300, #ca0a0a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+
+.nenu-headings h3 {
+    color: var(--text-color-2);
+    font-size: 4rem;
+}
+
+.menu-content-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.menu-col {
+    min-width: 40vw;
+    min-height: auto;
+    border: 1px solid rgba(160, 162, 160, 0.2);
+    background: var(--bg-color);
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(64, 64, 64, 0.2);
+    margin: 1rem;
+}
+
+.menu-col-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu-title h4 {
+    background-image: linear-gradient(to right,#FAA300, #ca0a0a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+}
+
+.menu-col-details p {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1.7rem;
+}
+
+.menu-col-details p i {
+    font-size: 2rem;
+    color: #FAA300;
+}
+
+.menu-col-details span {
+    border: 1px dotted rgba(0, 0, 0, 0.7);
+    width: 150px;
+}
+
+.menu-col-content {
+    margin-bottom: 2rem;
+}
+
+#menu-icon {
+    display: none;
+    margin-top: .2rem;
+}
+
+#menu-icon i {
+    font-size: 1.2rem;
+    padding: 4px 7px;
+    border: 2px solid #191919;
+    border-radius: 8px;
+}
+
+/* END MENU MAIN PAGE */
